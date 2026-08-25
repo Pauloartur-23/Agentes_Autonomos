@@ -1,0 +1,5 @@
+# Conclusão
+
+Neste capítulo, mostramos como o n8n, com sua abordagem low-code e interface baseada em nós, serve como uma base poderosa e versátil para construir agentes práticos e inteligentes sem sacrificar flexibilidade ou controle, desde tarefas simples de automação até workflows sofisticados que combinam LLMs, APIs, lógica condicional, integrações com ferramentas de mercado e até processamento multimodal (voz e texto).
+
+Ao longo do capítulo, introduzimos os conceitos fundamentais (nós, *triggers*, fluxos), exploramos integração com IA e APIs externas, e concluímos com um exemplo real de agente multimodal que interage via Telegram. Essa jornada demonstra que, com relativamente pouco esforço, e sem depender de infraestrutura complexa ou amplo domínio de programação, é possível prototipar sistemas de agente robustos, adaptáveis e integrados ao mundo real. Em contextos como varejo, automação de dados ou atendimento ao cliente, a combinação de n8n + IA + integração externa permite transformar ideias em soluções operacionais em pouco tempo.

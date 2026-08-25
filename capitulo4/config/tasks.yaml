@@ -1,0 +1,33 @@
+# Código-fonte 4 - Definição de tarefas usando arquivo .yaml
+
+triagem_task:
+  description: >
+    Mensagem do cliente: {mensagem_cliente}
+    Logs: {logs}
+    Tipo de dispositivo: {tipo_dispositivo}
+
+    Classifique o tipo de problema e a urgência, e indique o agente
+    apropriado (técnico ou escalonamento).
+  expected_output: >
+    JSON com categoria, urgência e agente destino.
+  agent: triagem
+
+resolucao_tecnica_task:
+  description: >
+    Para chamadas do tipo software ou hardware, faça diagnóstico técnico
+    usando logs ou base de conhecimento e proponha solução.
+  expected_output: >
+    Passos de resolução técnica.
+  agent: tecnico
+  context:
+    - triagem_task
+
+escalonamento_task:
+  description: >
+    Se diagnóstico técnico não for suficiente, agente de escalonamento analisa o caso
+    inteiro e decide próxima ação.
+  expected_output: >
+    Recomendação final ou encaminhamento humano.
+  agent: escalonamento
+  context:
+    - resolucao_tecnica_task
